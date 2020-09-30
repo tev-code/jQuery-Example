@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+	<script type="text/javascript" src="Task 14.js"></script>
+	<title>jQuery Task 14</title>
+	<style>
+		body { 
+
+			color: white;
+			background: black;
+			text-align: center;
+			font-style: italic;
+			margin: 0;
+		}
+
+		.green {
+			background: green;
+		}
+
+		.navy {
+			background: navy;
+		}
+
+		.italic {
+			font-family: arial;
+		}
+
+		.accordion {
+			max-width: 600px;
+			display: block;
+			margin: 100px auto;
+		}
+
+		.accordion .card {
+			box-shadow: 0px 0px 20px grey;
+			margin-bottom: 20px;
+
+        }
+
+        .accordion .card .card-header h3 {
+        	cursor: pointer;
+        	color: grey;
+        	position: relative;
+        	background-color: white;
+        	margin: 0px;
+        	padding: 15px 20px;
+
+        }
+
+      .accordion .card .card-header h3 span {
+
+      	position: absolute;
+      	right: 20px;
+      	top: 12px;
+      	height: 25px;
+      	width: 25px;
+      	color: white;
+      	background-color: black;
+      	border-radius: 50%;
+      	text-align: center;
+      	line-height: 25px;
+      	font-size: 13px;
+      }
+
+      .accordion .card .card-body {
+      	padding: 20px;
+      }
+
+      .accordion .card .card-body {
+      	display: none;
+      }
+      .accordion .card:nth-child(1) .card-body {
+      	display: block;
+      }
+      .accordion .card .card-body p {
+      	font-size: 15px;
+      	line-height: 24px;
+      	color: white;
+      	margin: 0px;
+      }
+
+
+
+
+
+
+		
+	</style>
+</head>
+<body>
+	<h1>CHANGE COLOUR</h1>
+	<button class="green" id="greenbtn">green</button>
+	<button class="navy" id="navybtn">navy</button>
+	<br>
+	<br>
+	
+	<button id="fadeout">FADEOUT</button> <button id="fadein">FADEIN</button>
+	<br>
+	<br>
+	<div id="text">This is just some random text being typed by a random person</div>
+	
+   
+   <div class="low">
+   	<h2>jQuery For Beginners</h2>
+   	    <p>This is just some random text put together by a learning student, who is starting to like jQuery</p>
+</div>
+  <div class="pic">
+  	<img src="img/soccer.gif" alt="my soccer.gif" id="footy">
+  	<button id="fade-out">Fade-Out</button>  
+  	<button id="fade-in">Fade-In</button>
+  	<button id="stop">STOP</button>
+  </div>
+  <div class="accordion">
+  	<div class="card">
+  		<div class="card-header">
+  			<h3>HEADING 1 <span class="icon">-</span></h3>
+  		</div>
+  		<div class="card-body">
+  			 <p>This is just some random text put together by a learning student, who is starting to like jQuery</p>
+  			</div>
+  		</div>
+  		<div class="accordion">
+  	<div class="card">
+  		<div class="card-header">
+  			<h3>HEADING 2 <span class="icon">-</span></h3>
+  		</div>
+  		<div class="card-body">
+  			 <p>This is just some random text put together by a learning student, who is starting to like jQuery</p>
+  			</div>
+  		</div>
+  		<div class="accordion">
+  	<div class="card">
+  		<div class="card-header">
+  			<h3>HEADING 3 <span class="icon">-</span></h3>
+  		</div>
+  		<div class="card-body">
+  			 <p>This is just some random text put together by a learning student, who is starting to like jQuery</p>
+  			</div>
+  		</div>
+  	</div>
+
+
+</body>
+</html>
